@@ -1,0 +1,124 @@
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?92eff9fd8ab6b7e7e49e8c3c19c9737b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript">
+
+var imgUrl = "http://boccdn.superwx.cn/nx20180103_commend/img/share.png";
+var lineLink = "http://www.nx-boc.cn/NingXiaBoc/wxpage/nx20180103_commend/index.php";
+var descContent = "玩转手机银行，轻松赢得推荐大礼，推荐有你，好礼我相送！";
+var shareTitle = "@所有人，奖品已备好！还不点进来看看？";
+
+//微信分享
+wx.config({
+    appId: 'wxd9c8e6f70ac199ac',
+    timestamp: 1515724979,
+    nonceStr: 'WMJQ1ofM4gvfuqUW',
+    signature: '54b68ab00d0cb784ac70e767989794404a6a57c1',
+    debug: false,
+    jsApiList: ["onMenuShareTimeline","onMenuShareAppMessage","onMenuShareQQ","onMenuShareWeibo","chooseImage","uploadImage","hideMenuItems","closeWindow"] // 所有要调用的 API 都要加到这个列表中
+});
+
+wx.ready(function() {
+
+    // 在这里调用 API
+    wx.hideMenuItems({
+        menuList: ['menuItem:copyUrl', 'menuItem:favorite', 'menuItem:originPage', 'menuItem:openWithQQBrowser', 'menuItem:openWithSafari', 'menuItem:share:email', 'menuItem:share:qq', 'menuItem:share:weiboApp', 'menuItem:share:QZone', 'menuItem:share:timeline'] //  要隐藏的菜单项，只能隐藏“传播类”和“保护类”按钮，所有menu项见附录3,'menuItem:share:appMessage'
+    });
+
+    wx.onMenuShareTimeline({ //分享到朋友圈
+        title: shareTitle, // 分享标题
+        link: lineLink, // 分享链接
+        imgUrl: imgUrl, // 分享图标
+        success: function() {
+
+        },
+        cancel: function() {
+
+        }
+    });
+
+    wx.onMenuShareAppMessage({ //分享给朋友
+        title: shareTitle, // 分享标题
+        desc: descContent, // 分享描述
+        link: lineLink, // 分享链接
+        imgUrl: imgUrl, // 分享图标
+        type: "", // 分享类型,music、video或link，不填默认为link
+        dataUrl: "", // 如果type是music或video，则要提供数据链接，默认为空
+        success: function() {
+
+        },
+        cancel: function() {
+
+        }
+    });
+
+});
+</script>
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 浏览器中页面将以原始大小显示，并不允许缩放 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 网站开启对web app程序的支持 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>推荐好友开通手机银行</title>
+    <link rel="stylesheet" href="http://rncdn.superwx.cn/nx20180103_commend/css/public.css">
+    <link rel="stylesheet" href="http://rncdn.superwx.cn/nx20180103_commend/css/style.css?v=20180103">
+</head>
+
+<body>
+    <div class="content">
+        <div class="head"><img src="http://rncdn.superwx.cn/nx20180103_commend/img/logo.png" alt="中国银行宁夏回族自治区分行"></div>
+        <div class="banner" style="    position: absolute;">
+            <div class="w_img"><img src="http://rncdn.superwx.cn/nx20180103_commend/img/banner3.png" alt="" class="banner1"></div>
+            <div class="zs"><img src="http://rncdn.superwx.cn/nx20180103_commend/img/gg.png" alt="">
+                <img src="http://rncdn.superwx.cn/nx20180103_commend/img/ll.png" alt="">
+                <img src="http://rncdn.superwx.cn/nx20180103_commend/img/hh.png" alt="" class="hh">
+            </div>
+        </div>
+        <div class="jilu">
+            <img src="http://rncdn.superwx.cn/nx20180103_commend/img/tt.png" alt="推荐有好礼，开通手机银行" style="width: 10rem;">
+            <div class="hegg">
+                <table class="gridtable">
+                    <tr>
+                        <th>推荐时间</th>
+                        <th>手机号</th>
+                        <th>客户标识</th>
+                        <th>是否推<br/>荐成功</th>
+                    </tr>
+                                    </table>
+            </div>
+            <p>客户标识说明：</p>
+            <p>1、未开通：客户尚未开通手机银行，请告知您的好友在30日内前往中国银行宁夏分行各网点开通手机银行；</p>
+            <p>2、已开通：您推荐的用户已是中国银行宁夏分行手机银行客户；</p>
+            <p>3、已过期：您推荐的用户需在30日内开通手机银行，超过30日未开通，视为已过期。</p>
+        </div>
+        <div class="gule"><a href="rule.php"><img src="http://rncdn.superwx.cn/nx20180103_commend/img/gule.png" alt="活动规则" style="
+    z-index: 99999;"></a></div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    // document.querySelector('body').addEventListener('touchmove', function(e) {
+    //     if (!document.querySelector('.table').contains(e.target)) {
+    //         e.preventDefault();
+    //     }
+    // })
+    </script>
+</body>
+
+</html>
